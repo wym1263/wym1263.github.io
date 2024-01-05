@@ -1,0 +1,94 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>Home - WMOJ</title>
+<style>
+body{
+background-color:#f2f2f2;
+}
+#atext{
+text-decoration:none;
+color:black;
+}
+#divtop{
+margin:50px;
+padding:20px 0px 20px 27px;
+background-color:white;
+}
+#divmiddle{
+position:relative;
+margin:50px 300px 50px 50px;
+padding:30px 50px 50px 50px;
+background-color:white;
+}
+#divright{
+position:absolute;
+right:-280px;
+top:-50px;
+margin:50px;
+padding:50px;
+background-color:white;
+}
+input{
+height:50px;
+width:500px;
+}
+#pinput{
+font-size:25px;
+}
+button{
+height:50px;
+width:100px;
+}
+</style>
+<script>
+function readValue(){
+var input=document.getElementById('username');
+var value=input.value;
+var username=value;
+input=document.getElementById('password');
+value=input.value;
+var password=value;
+if(localStorage[username]=='undefined'){
+alert('no');
+}else{
+alert('yes');
+}
+Localstorage[username]=password;
+}
+</script>
+</head>
+<body>
+<!-- 这里是页面栏 -->
+<!-- 这里有一堆东西没有做（提醒！） -->
+<div id="divtop">
+<a href="Index.html"><img src="wmoj.png" height="8%"/></a>
+&nbsp
+<a href="Problem.html"><img src="problem.png" height="9%"/></a>
+&nbsp
+<a href="Discuss.html"><img src="discuss.png" height="9%"/></a>
+&nbsp
+<a href="Register.html">Register</a>
+</div>
+<!-- 这里是主区 -->
+<div id="divmiddle">
+<h1>WMOJ Register</h1>
+<p>
+<h3 label='username'>Username</h3>
+<input id='username' style="font-size:20px" placeholder='只能输入英文字母或数字'/>
+<h3 label='password'>Password</h3>
+<input id='password' style="font-size:20px" placeholder='只能输入英文字母或数字'/>
+<br><br>
+<a href='javascript: readValue();void 0'>Confirm</a>
+</p>
+<!-- 这里是侧边栏 -->
+<div id="divright">
+<h2>侧边栏</h2>
+<!-- 这里未设置（提醒！） -->
+<a href="Question.html">问题解答</a>
+<br>
+<a href="mailto:WUYIMING.1263@outlook.com">联系我们</a>
+</div>
+</div>
+</body>
+</html>

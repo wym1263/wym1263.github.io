@@ -1,0 +1,16 @@
+{
+"type":"admin",
+"username":"admin",
+"password":"administratoraabbccddqqmmzzppalready",
+"create_problem":"can",
+"revise_problem":"can",
+"upload_date_problem":"can",
+"download_date_problem":"can",
+"setting_problem":"can",
+"create_discuss":"can",
+"revise_discuss":"can",
+"revise_home":"can",
+"revise_user":"can",
+"create_user":"can",
+"look_user_password":"can"
+}
